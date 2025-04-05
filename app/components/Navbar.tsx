@@ -1,6 +1,7 @@
-'use client'
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import AnimatedBurger from "./MenuButton";
+import { activeProps } from "../types";
 
 // interface NavLink {
 // 	title: string;
@@ -13,10 +14,11 @@ import AnimatedBurger from "./MenuButton";
 //     {title: 'Contact', href: '/contact'},
 // ];
 
-const Navbar = () => {
+
+const Navbar = ({active, setActive}: activeProps) => {
 	return (
 		<div className="flex border-b-[0.1px] h-16 border-white justify-end items-center">
-			<AnimatedBurger />
+			<AnimatedBurger active={active} setActive={setActive}/>
 		</div>
 	);
 };
