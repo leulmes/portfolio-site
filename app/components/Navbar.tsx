@@ -1,10 +1,10 @@
 import React from "react";
 import AnimatedBurger from "./MenuButton";
 
-interface NavLink {
-	title: string;
-	href: string;
-}
+// interface NavLink {
+// 	title: string;
+// 	href: string;
+// }
 // const navLinks: NavLink = [
 //     {title: 'Home', href: '/home'},
 //     {title: 'Experience', href: '/experience'},

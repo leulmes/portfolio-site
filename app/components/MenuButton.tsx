@@ -15,7 +15,7 @@ const AnimatedBurger = () => {
 			<motion.button
 				initial={false}
 				onClick={() => setActive((pv) => !pv)}
-				className="relative h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-white"
+				className="relative h-20 w-20 rounded-full cursor-pointer"
 				animate={active ? "open" : "closed"}
 			>
 				<motion.span
