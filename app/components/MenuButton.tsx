@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, MotionConfig } from "motion/react";
 import { activeProps } from "../types";
 
-const AnimatedBurger = ({active, setActive}: activeProps) => {
+const AnimatedBurger = ({ active, setActive }: activeProps) => {
 	// const [active, setActive] = useState(false);
 
 	return (

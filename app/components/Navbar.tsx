@@ -1,18 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import AnimatedBurger from "./MenuButton";
 import { activeProps } from "../types";
-
-// interface NavLink {
-// 	title: string;
-// 	href: string;
-// }
-// const navLinks: NavLink = [
-//     {title: 'Home', href: '/home'},
-//     {title: 'Experience', href: '/experience'},
-//     {title: 'Projects', href: '/projects'},
-//     {title: 'Contact', href: '/contact'},
-// ];
 
 
 const Navbar = ({active, setActive}: activeProps) => {
