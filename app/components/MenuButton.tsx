@@ -16,25 +16,25 @@ const AnimatedBurger = ({ active, setActive }: activeProps) => {
 			<motion.button
 				initial={false}
 				onClick={() => setActive((pv) => !pv)}
-				className="relative h-20 w-20 rounded-full cursor-pointer"
+				className="relative h-20 w-20 cursor-pointer "
 				animate={active ? "open" : "closed"}
 			>
 				<motion.span
 					style={{
 						left: "50%",
-						top: "35%",
+						top: "42%",
 						x: "-50%",
 						y: "-50%",
 					}}
-					className="absolute h-1 w-10 bg-white rounded border"
+					className="absolute h-1 w-7 bg-white rounded border"
 					variants={{
 						open: {
 							rotate: ["0deg", "0deg", "45deg"],
-							top: ["35%", "50%", "50%"],
+							top: ["42%", "50%", "50%"],
 						},
 						closed: {
 							rotate: ["45deg", "0deg", "0deg"],
-							top: ["50%", "50%", "35%"],
+							top: ["50%", "50%", "42%"],
 						},
 					}}
 				></motion.span>
@@ -45,10 +45,10 @@ const AnimatedBurger = ({ active, setActive }: activeProps) => {
 						x: "-50%",
 						y: "-50%",
 					}}
-					className="absolute h-1 w-10 bg-white rounded border"
+					className="absolute h-1 w-7 bg-white rounded border"
 					variants={{
 						open: {
-							rotate: ["0deg", "0deg", "-45deg"],
+							rotate: ["0deg", "0deg", "45deg"],
 						},
 						closed: {
 							rotate: ["-45deg", "0deg", "0deg"],
@@ -58,19 +58,19 @@ const AnimatedBurger = ({ active, setActive }: activeProps) => {
 				<motion.span
 					style={{
 						left: "50%",
-						bottom: "35%",
+						bottom: "42%",
 						x: "-50%",
 						y: "50%",
 					}}
-					className="absolute h-1 w-10 bg-white rounded border"
+					className="absolute h-1 w-7 bg-white rounded border"
 					variants={{
 						open: {
 							rotate: ["0deg", "0deg", "-45deg"],
-							bottom: ["35%", "50%", "50%"],
+							bottom: ["42%", "50%", "50%"],
 						},
 						closed: {
 							rotate: ["-45deg", "0deg", "0deg"],
-							bottom: ["50%", "50%", "35%"],
+							bottom: ["50%", "50%", "42%"],
 						},
 					}}
 				></motion.span>
