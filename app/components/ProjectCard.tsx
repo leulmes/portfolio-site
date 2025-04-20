@@ -46,7 +46,7 @@ const ProjectCard = ({
 					<motion.button
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95, rotate: "0deg" }}
-						className="cursor-pointer rounded border flex gap-2 items-center bg-white text-black px-2 py-0.5 w-16"
+						className="cursor-pointer rounded border flex gap-2 items-center bg-white text-black px-2 py-0.5 w-16 font-main"
 					>
 						<p>Demo</p>
 					</motion.button>

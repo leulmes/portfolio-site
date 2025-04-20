@@ -11,8 +11,8 @@ interface NavLink {
 const navLinks: NavLink[] = [
 	{ idx: 0, title: "Home", href: "#first-section" },
 	{ idx: 1, title: "Experience", href: "#second-section" },
-	{ idx: 2, title: "Projects", href: "/projects" },
-	{ idx: 3, title: "Contact", href: "/contact" },
+	{ idx: 2, title: "Projects", href: "#third-section" },
+	{ idx: 3, title: "Contact", href: "#fourth-section" },
 ];
 
 const navVars = {
@@ -83,7 +83,7 @@ const DropdownSheet = () => {
 			initial="initial"
 			animate="animate"
 			exit="exit"
-			className="flex bg-amber-600 w-full h-screen items-center justify-center origin-top"
+			className="flex bg-amber-600 w-full h-full items-center justify-center origin-top"
 		>
 			<motion.div
 				variants={containerVars}

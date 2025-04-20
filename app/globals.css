@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @theme inline {
     --font-main: var(--font-kumbh);
 }
