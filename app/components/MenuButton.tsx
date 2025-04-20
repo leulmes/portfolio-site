@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, MotionConfig } from "motion/react";
 import { activeProps } from "../types";
 
-const AnimatedBurger = ({ active, setActive }: activeProps) => {
+const AnimatedBurger = ({ menu, setMenu }: activeProps) => {
 	// const [active, setActive] = useState(false);
 
 	return (
@@ -15,9 +15,9 @@ const AnimatedBurger = ({ active, setActive }: activeProps) => {
 		>
 			<motion.button
 				initial={false}
-				onClick={() => setActive((pv) => !pv)}
+				onClick={() => setMenu((pv) => !pv)}
 				className="relative h-20 w-20 cursor-pointer "
-				animate={active ? "open" : "closed"}
+				animate={menu ? "open" : "closed"}
 			>
 				<motion.span
 					style={{

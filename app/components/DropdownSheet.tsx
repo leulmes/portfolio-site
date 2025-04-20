@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { activeProps, activeProps2 } from "../types";
 
 interface NavLink {
 	idx: number;
@@ -60,19 +61,19 @@ const containerVars = {
 	},
 };
 
-const MobileNavLink = ({ title, href }: { title: string; href: string }) => {
+const MobileNavLink = ({ title, href, menu, setMenu }: activeProps2) => {
 	return (
 		<motion.div variants={navLinkVars}>
-			<Link href={href}>{title}</Link>
+			<Link href={href} onClick={() => setMenu(!menu)}>{title}</Link>
 		</motion.div>
 	);
 };
 
-const DropdownSheet = () => {
+const DropdownSheet = ({menu, setMenu}: activeProps) => {
 	const navItems = navLinks.map((link) => {
 		return (
 			<div className="overflow-hidden" key={link.idx}>
-				<MobileNavLink title={link.title} href={link.href} />
+				<MobileNavLink title={link.title} href={link.href} menu={menu} setMenu={setMenu}/>
 			</div>
 		);
 	});

@@ -27,13 +27,13 @@ export default function Home() {
 	}, [menu]);
 
 	return (
-		<div className="overflow-y-hidden">
-			<Navbar active={menu} setActive={setMenu} />
+		<div className="">
+			<Navbar menu={menu} setMenu={setMenu} />
 			<div className="">
 				<AnimatePresence>
 					{menu && (
 						<div className="fixed z-10 w-full h-screen">
-							<DropdownSheet />
+							<DropdownSheet menu={menu} setMenu={setMenu} />
 						</div>
 					)}
 				</AnimatePresence>
