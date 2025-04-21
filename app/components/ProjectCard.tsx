@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 interface ProjectInfo {
 	name: string;

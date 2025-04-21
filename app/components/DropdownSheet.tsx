@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { activeProps, activeProps2 } from "../types";
 
 interface NavLink {
@@ -84,7 +84,7 @@ const DropdownSheet = ({menu, setMenu}: activeProps) => {
 			initial="initial"
 			animate="animate"
 			exit="exit"
-			className="flex bg-amber-600 w-full h-full items-center justify-center origin-top"
+			className="flex bg-white w-full h-full items-center justify-center origin-top"
 		>
 			<motion.div
 				variants={containerVars}

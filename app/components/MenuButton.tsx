@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion, MotionConfig } from "motion/react";
 import { activeProps } from "../types";
 

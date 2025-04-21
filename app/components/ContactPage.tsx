@@ -10,7 +10,7 @@ const ContactPage = () => {
 	const [name, setName] = useState<string>("");
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
-    let buttonText = "";
+    const buttonText = "";
 
 	useEffect(() => {
 		console.log("Submit button state: ", submitState);

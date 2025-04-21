@@ -9,8 +9,8 @@ const kumbh_sans_init = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Leul Mesfin",
-  description: "A Leul Mesfin site",
+  title: "leuldev",
+  description: "Designed & Developed by Leul Mesfin ;)",
 };
 
 export default function RootLayout({
