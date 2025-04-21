@@ -7,10 +7,13 @@ import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import ExperienceCard from "./components/ExperienceCard";
-import ProjectCard from "./components/ProjectCard";
 import ContactPage from "./components/ContactPage";
-import GithubIcon from "./components/GithubIcon";
-import DemoIcon from "./components/DemoIcon";
+import {
+	GithubIcon,
+	DemoIcon,
+	LinkedinIcon,
+	DownloadIcon,
+} from "./components/SvgIcons";
 
 export default function Home() {
 	const [menu, setMenu] = useState(false);
@@ -40,33 +43,64 @@ export default function Home() {
 					)}
 				</AnimatePresence>
 
-				<div className="">
+				<div className="scroll-smooth">
 					<div
 						id="first-section"
-						className="flex flex-col items-center justify-center font-main text-white"
+						className="flex flex-col items-center justify-center text-white mb-36"
 					>
 						<Image
 							src="ghibli.jpeg"
 							width={250}
 							height={200}
 							alt="Picture of the author"
-							className="rounded-full mb-4 mt-6"
+							className="rounded-full mb-4 mt-14"
 						/>
-						<h1 className="text-2xl text-center">
+						<h1 className="text-4xl text-center font-main font-bold">
 							Selam (ሰላም), I&apos;m Leul 👋🏾
 						</h1>
-						<h2 className="text-lg text-center">
-							Software Developer & Coding Instructor
+						<h2 className="text-2xl text-center font-main mt-2">
+							Software Dev. & Coding Instructor
 						</h2>
-						<h3 className="text-base text-center">
-							just solving problems with software...😉
+						<h3 className="text-base text-center font-main mt-2">
+							Code with purpose. Build with care.
 						</h3>
+
+						<div className="flex items-center gap-5 mt-5">
+							<Link
+								href="/resume.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<motion.button
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95, rotate: "0deg" }}
+									className="flex items-center border-1 rounded-3xl p-2 text-base cursor-pointer bg-white text-black  border-black"
+								>
+									Resume <DownloadIcon />
+								</motion.button>
+							</Link>
+
+							<Link
+								href="https://www.linkedin.com/in/leul-mesfin"
+								className="cursor-pointer"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<motion.button
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95, rotate: "0deg" }}
+									className="flex items-center p-2 cursor-pointer"
+								>
+									<LinkedinIcon />
+								</motion.button>
+							</Link>
+						</div>
 
 						<Link href="#second-section">
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
-								className="cursor-pointer bg-white text-[#181818] rounded border mt-4"
+								className="cursor-pointer bg-white text-[#181818] rounded border mt-14"
 							>
 								<ArrowDown />
 							</motion.button>
@@ -86,29 +120,32 @@ export default function Home() {
 					</div>
 					<div id="third-section" className="flex flex-col">
 						<div className="max-w-[36rem] ml-3 mr-3">
-							<h1 className="text-white font-kumbh font-bold text-4xl pt-14">
+							<h1 className="text-white font-main font-bold text-4xl pt-14">
 								Music Transfer
 							</h1>
-							<div className="flex gap-1">
-								<span className="text-sm font-medium text-white">
-									TypeScript,{" "}
-								</span>
-								<span className="text-sm font-medium text-white">React, </span>
-								<span className="text-sm font-medium text-white">Java, </span>
-								<span className="text-sm font-medium text-white">
-									Spring Boot,{" "}
-								</span>
-								<span className="text-sm font-medium text-white">
-									Tailwind CSS
-								</span>
+							<div className="flex gap-1 text-sm font-medium text-white">
+								<span className="">React, </span>
+								<span className="">TypeScript,</span>
+								<span className="">Java, </span>
+								<span className="">Spring Boot,</span>
+								<span className="">Tailwind CSS</span>
 							</div>
 							<div className="mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
-								<p className="text-white">
-									Crafted a React web app that transfers my Spotify playlists to Apple
-									Music.
+								<p className="text-white font-main">
+									Crafted a React web app that transfers my Spotify playlists to
+									Apple Music.
 								</p>
 							</div>
-							<div className="flex items-center my-3 space-x-5">
+						</div>
+						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+							<Image
+								src="/musicTransfer.jpg"
+								width={409}
+								height={350}
+								alt="mt"
+								className="rounded-2xl m-auto"
+							></Image>
+							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
 								<Link
 									href="https://www.youtube.com/watch?v=wukNB-JNbXw"
 									className=""
@@ -139,57 +176,75 @@ export default function Home() {
 								</Link>
 							</div>
 						</div>
-						<div className="relative aspect-video w-full max-w-[36rem]">
-							<Image
-								src="/musicTransfer.jpg"
-								width={400}
-								height={350}
-								alt="mt"
-								className="rounded-2xl m-auto"
-							></Image>
+						<div className="max-w-[36rem]">
+							<div className="text-right ml-3 mr-3">
+								<h1 className="text-white font-main font-bold text-4xl pt-14">
+									Gainz
+								</h1>
+								<div className="flex gap-1  text-sm font-medium text-white justify-end">
+									<span>React Native,</span>
+									<span>TypeScript,</span>
+									<span>Python,</span>
+									<span>AWS,</span>
+									<span>Clerk,</span>
+									<span>Tamagui</span>
+								</div>
+								<div className=" mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+									<p className="text-white font-main">
+										Co-developed a social media and fitness mobile application.
+										This app users to create, modify, and track workouts. Users
+										can also share workouts and engage with their friends.
+									</p>
+								</div>
+							</div>
+							<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+								<Image
+									src="/gainz.png"
+									width={409}
+									height={350}
+									alt="mt"
+									className="rounded-2xl m-auto"
+								></Image>
+								<div className="flex items-center my-3 space-x-5 ml-3 mr-3 justify-end">
+									<Link
+										href="https://www.youtube.com/watch?v=iAC8FYCfB2A"
+										className=""
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										<motion.button
+											whileHover={{ scale: 1.05 }}
+											whileTap={{ scale: 0.95, rotate: "0deg" }}
+											className="cursor-pointer rounded bg-white  text-black text-sm"
+										>
+											<DemoIcon />
+										</motion.button>
+									</Link>
+									<Link
+										href="https://github.com/kushaldevv/gainzApp"
+										className=""
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										<motion.button
+											whileHover={{ scale: 1.05 }}
+											whileTap={{ scale: 0.95, rotate: "0deg" }}
+											className="cursor-pointer text-white "
+										>
+											<GithubIcon />
+										</motion.button>
+									</Link>
+								</div>
+							</div>
 						</div>
-
-						{/* <div className="flex flex-col gap-28 items-center">
-							<ProjectCard
-								name={"Music Transfer"}
-								techStack={"TypeScript, React, Java, Spring Boot, TailwindCSS"}
-								description={
-									"Crafted a web app that transfers Spotify playlists to Apple Music."
-								}
-								imageHref={"/musicTransfer.jpg"}
-								demoLink={"https://www.youtube.com/watch?v=wukNB-JNbXw"}
-								githubLink={"https://github.com/leulmes/playlist-transfer"}
-							/>
-
-							<ProjectCard
-								name={"Gainz"}
-								techStack={
-									"React Native, TypeScript, Python, AWS DynamoDB, AWS Lambda, Clerk"
-								}
-								description={
-									"Co-developed a social media and fitness mobile application."
-								}
-								imageHref={"/gainz.png"}
-								demoLink={"https://www.youtube.com/watch?v=iAC8FYCfB2A"}
-								githubLink={"https://github.com/kushaldevv/gainzApp"}
-							/>
-							<ProjectCard
-								name={"TerpExchange"}
-								techStack={"Swift, Google Firebase"}
-								description={
-									"Co-developed a mobile marketplace enabling UMD students to buy and sell products."
-								}
-								imageHref={"/terpExchange.jpg"}
-								demoLink={"https://www.youtube.com/watch?v=CR91i9f5n8U"}
-								githubLink={"https://github.com/kushaldevv/terpXchange"}
-							/>
-						</div> */}
 					</div>
 					<div id="fourth-section" className="flex flex-col items-center">
 						<h1 className="text-white font-main font-bold text-4xl pt-14">
 							Contact
 						</h1>
-						<h2 className="text-white font-main mt-3 mb-5">Let's get in touch!</h2>
+						<h2 className="text-white font-main mt-3 mb-5">
+							Say hi — I don’t bite (unless you’re cake 🍰).
+						</h2>
 						<ContactPage />
 					</div>
 				</div>

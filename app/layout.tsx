@@ -9,7 +9,7 @@ const kumbh_sans_init = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "leuldev",
+  title: "leuldev.com",
   description: "Designed & Developed by Leul Mesfin ;)",
 };
 

@@ -1,0 +1,134 @@
+[debug] [2025-04-21T13:38:30.330Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T13:38:30.336Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting
+[debug] [2025-04-21T13:38:30.336Z] CLI Version:   14.1.0
+[debug] [2025-04-21T13:38:30.336Z] Platform:      darwin
+[debug] [2025-04-21T13:38:30.336Z] Node Version:  v23.7.0
+[debug] [2025-04-21T13:38:30.337Z] Time:          Mon Apr 21 2025 09:38:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-04-21T13:38:30.337Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T13:38:30.425Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T13:38:30.425Z] > authorizing via signed-in user (leulmesfin152025@gmail.com)
+[debug] [2025-04-21T13:38:30.425Z] [iam] checking project leulmesfin-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T13:38:30.425Z] Checked if tokens are valid: false, expires at: 1745195511957
+[debug] [2025-04-21T13:38:30.426Z] Checked if tokens are valid: false, expires at: 1745195511957
+[debug] [2025-04-21T13:38:30.426Z] > refreshing access token with scopes: []
+[debug] [2025-04-21T13:38:30.426Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-21T13:38:30.426Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T13:38:30.599Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-21T13:38:30.599Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions [none]
+[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions x-goog-quota-user=projects/leulmesfin-site
+[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T13:38:30.773Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions 200
+[debug] [2025-04-21T13:38:30.773Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T13:38:30.775Z] Checked if tokens are valid: true, expires at: 1745246309599
+[debug] [2025-04-21T13:38:30.775Z] Checked if tokens are valid: true, expires at: 1745246309599
+[debug] [2025-04-21T13:38:30.775Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site [none]
+[debug] [2025-04-21T13:38:31.081Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site 200
+[debug] [2025-04-21T13:38:31.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site {"projectId":"leulmesfin-site","projectNumber":"1004783729908","displayName":"leulmesfin-site","name":"projects/leulmesfin-site","resources":{"hostingSite":"leulmesfin-site"},"state":"ACTIVE","etag":"1_1cabd2c4-1aa9-445c-9762-ff3627efc6e2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-21T13:38:33.107Z] Checked if tokens are valid: true, expires at: 1745246309599
+[debug] [2025-04-21T13:38:33.107Z] Checked if tokens are valid: true, expires at: 1745246309599
+[debug] [2025-04-21T13:38:33.107Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site [none]
+[debug] [2025-04-21T13:38:33.687Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site 200
+[debug] [2025-04-21T13:38:33.688Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site {"name":"projects/leulmesfin-site/sites/leulmesfin-site","defaultUrl":"https://leulmesfin-site.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info]    - Environments: .env.local
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+./app/page.tsx
+10:8  Error: 'ProjectCard' is defined but never used.  @typescript-eslint/no-unused-vars
+192:57  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+
+[debug] [2025-04-21T13:38:41.734Z] Error: ENOENT: no such file or directory, open '/Users/lulu/Desktop/leulmes-site/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-04-21T16:47:09.721Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T16:47:09.726Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting
+[debug] [2025-04-21T16:47:09.727Z] CLI Version:   14.1.0
+[debug] [2025-04-21T16:47:09.727Z] Platform:      darwin
+[debug] [2025-04-21T16:47:09.727Z] Node Version:  v23.7.0
+[debug] [2025-04-21T16:47:09.727Z] Time:          Mon Apr 21 2025 12:47:09 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-04-21T16:47:09.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T16:47:09.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T16:47:09.815Z] > authorizing via signed-in user (leulmesfin152025@gmail.com)
+[debug] [2025-04-21T16:47:09.815Z] [iam] checking project leulmesfin-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T16:47:09.815Z] Checked if tokens are valid: false, expires at: 1745246309599
+[debug] [2025-04-21T16:47:09.815Z] Checked if tokens are valid: false, expires at: 1745246309599
+[debug] [2025-04-21T16:47:09.816Z] > refreshing access token with scopes: []
+[debug] [2025-04-21T16:47:09.816Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-21T16:47:09.816Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T16:47:09.990Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-21T16:47:09.991Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions [none]
+[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions x-goog-quota-user=projects/leulmesfin-site
+[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T16:47:10.182Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions 200
+[debug] [2025-04-21T16:47:10.182Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T16:47:10.183Z] Checked if tokens are valid: true, expires at: 1745257628991
+[debug] [2025-04-21T16:47:10.183Z] Checked if tokens are valid: true, expires at: 1745257628991
+[debug] [2025-04-21T16:47:10.184Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site [none]
+[debug] [2025-04-21T16:47:10.734Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site 200
+[debug] [2025-04-21T16:47:10.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site {"projectId":"leulmesfin-site","projectNumber":"1004783729908","displayName":"leulmesfin-site","name":"projects/leulmesfin-site","resources":{"hostingSite":"leulmesfin-site"},"state":"ACTIVE","etag":"1_1cabd2c4-1aa9-445c-9762-ff3627efc6e2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-21T16:47:12.582Z] Checked if tokens are valid: true, expires at: 1745257628991
+[debug] [2025-04-21T16:47:12.582Z] Checked if tokens are valid: true, expires at: 1745257628991
+[debug] [2025-04-21T16:47:12.582Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site [none]
+[debug] [2025-04-21T16:47:13.331Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site 200
+[debug] [2025-04-21T16:47:13.331Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site {"name":"projects/leulmesfin-site/sites/leulmesfin-site","defaultUrl":"https://leulmesfin-site.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.4
+
+[info]    - Environments: .env.local
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+./app/page.tsx
+10:8  Error: 'ProjectCard' is defined but never used.  @typescript-eslint/no-unused-vars
+198:11  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+
+[debug] [2025-04-21T16:47:18.845Z] Error: ENOENT: no such file or directory, open '/Users/lulu/Desktop/leulmes-site/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
