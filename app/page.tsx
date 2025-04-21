@@ -53,19 +53,19 @@ export default function Home() {
 							width={250}
 							height={200}
 							alt="Picture of the author"
-							className="rounded-full mb-4 mt-14"
+							className="rounded-full mb-4 mt-6"
 						/>
-						<h1 className="text-4xl text-center font-main font-bold">
+						<h1 className="text-3xl text-center font-main font-bold">
 							Selam (ሰላም), I&apos;m Leul 👋🏾
 						</h1>
-						<h2 className="text-2xl text-center font-main mt-2">
+						<h2 className="text-xl text-center font-main ">
 							Software Dev. & Coding Instructor
 						</h2>
-						<h3 className="text-base text-center font-main mt-2">
-							Code with purpose. Build with care.
+						<h3 className="text-base text-center font-main">
+							just coding my ideas into reality...
 						</h3>
 
-						<div className="flex items-center gap-5 mt-5">
+						<div className="flex items-center gap-5 mt-3">
 							<Link
 								href="/resume.pdf"
 								target="_blank"
@@ -74,7 +74,7 @@ export default function Home() {
 								<motion.button
 									whileHover={{ scale: 1.05 }}
 									whileTap={{ scale: 0.95, rotate: "0deg" }}
-									className="flex items-center border-1 rounded-3xl p-2 text-base cursor-pointer bg-white text-black  border-black"
+									className="flex items-center border-1 rounded-3xl p-2 text-base cursor-pointer bg-white text-black border-black"
 								>
 									Resume <DownloadIcon />
 								</motion.button>
@@ -100,20 +100,20 @@ export default function Home() {
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
-								className="cursor-pointer bg-white text-[#181818] rounded border mt-14"
+								className="cursor-pointer bg-white text-[#181818] rounded border mt-5"
 							>
 								<ArrowDown />
 							</motion.button>
 						</Link>
 					</div>
 					<div id="second-section" className="flex flex-col items-center">
-						<h1 className="text-white font-kumbh font-bold text-7xl  mb-10 pt-14">
+						<h1 className="text-white font-main font-bold text-5xl mb-10 pt-20">
 							Experience
 						</h1>
 						<ExperienceCard
 							company={"Panda Programmer"}
 							role={"Lead Coding Instructor"}
-							timeframe={"Dec 2024 - Present"}
+							timeframe={"Dec. 2024 - Present"}
 							imageHref={"/panda.png"}
 							location={"Silver Spring - Bethesda, MD"}
 						/>
@@ -176,65 +176,118 @@ export default function Home() {
 								</Link>
 							</div>
 						</div>
-						<div className="max-w-[36rem]">
-							<div className="text-right ml-3 mr-3">
-								<h1 className="text-white font-main font-bold text-4xl pt-14">
-									Gainz
-								</h1>
-								<div className="flex gap-1  text-sm font-medium text-white justify-end">
-									<span>React Native,</span>
-									<span>TypeScript,</span>
-									<span>Python,</span>
-									<span>AWS,</span>
-									<span>Clerk,</span>
-									<span>Tamagui</span>
-								</div>
-								<div className=" mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
-									<p className="text-white font-main">
-										Co-developed a social media and fitness mobile application.
-										This app users to create, modify, and track workouts. Users
-										can also share workouts and engage with their friends.
-									</p>
-								</div>
+						<div className=" max-w-[36rem] text-right ml-3 mr-3">
+							<h1 className="text-white font-main font-bold text-4xl pt-14">
+								Gainz
+							</h1>
+							<div className="flex gap-1  text-sm font-medium text-white justify-end">
+								<span>React Native,</span>
+								<span>TypeScript,</span>
+								<span>Python,</span>
+								<span>AWS,</span>
+								<span>Clerk,</span>
+								<span>Tamagui</span>
 							</div>
-							<div className="relative aspect-video w-full max-w-[36rem] mt-2">
-								<Image
-									src="/gainz.png"
-									width={409}
-									height={350}
-									alt="mt"
-									className="rounded-2xl m-auto"
-								></Image>
-								<div className="flex items-center my-3 space-x-5 ml-3 mr-3 justify-end">
-									<Link
-										href="https://www.youtube.com/watch?v=iAC8FYCfB2A"
-										className=""
-										rel="noopener noreferrer"
-										target="_blank"
+							<div className=" mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+								<p className="text-white font-main">
+									Co-developed a social media and fitness mobile application.
+									This app users to create, modify, and track workouts. Users
+									can also share workouts and engage with their friends.
+								</p>
+							</div>
+						</div>
+						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+							<Image
+								src="/gainz.png"
+								width={409}
+								height={350}
+								alt="mt"
+								className="rounded-2xl m-auto"
+							></Image>
+							<div className="flex items-center my-3 space-x-5 ml-3 mr-3 justify-end">
+								<Link
+									href="https://www.youtube.com/watch?v=iAC8FYCfB2A"
+									className=""
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-pointer rounded bg-white  text-black text-sm"
 									>
-										<motion.button
-											whileHover={{ scale: 1.05 }}
-											whileTap={{ scale: 0.95, rotate: "0deg" }}
-											className="cursor-pointer rounded bg-white  text-black text-sm"
-										>
-											<DemoIcon />
-										</motion.button>
-									</Link>
-									<Link
-										href="https://github.com/kushaldevv/gainzApp"
-										className=""
-										rel="noopener noreferrer"
-										target="_blank"
+										<DemoIcon />
+									</motion.button>
+								</Link>
+								<Link
+									href="https://github.com/kushaldevv/gainzApp"
+									className=""
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-pointer text-white "
 									>
-										<motion.button
-											whileHover={{ scale: 1.05 }}
-											whileTap={{ scale: 0.95, rotate: "0deg" }}
-											className="cursor-pointer text-white "
-										>
-											<GithubIcon />
-										</motion.button>
-									</Link>
-								</div>
+										<GithubIcon />
+									</motion.button>
+								</Link>
+							</div>
+						</div>
+						<div className="max-w-[36rem] ml-3 mr-3">
+							<h1 className="text-white font-main font-bold text-4xl pt-14">
+								Terp Exchange
+							</h1>
+							<div className="flex gap-1 text-sm font-medium text-white ">
+								<span className="">Swift,</span>
+								<span className="">Google Firebase</span>
+							</div>
+							<div className="mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+								<p className="text-white font-main">
+									Co-engineered a mobile marketplace for UMD students. Built with
+									Swift, and leveraged Google Firebase to establish a robust
+									UMD-affiliated auth system.
+								</p>
+							</div>
+						</div>
+						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+							<Image
+								src="/terpExchange.jpg"
+								width={409}
+								height={350}
+								alt="te"
+								className="rounded-2xl m-auto"
+							></Image>
+							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
+								<Link
+									href="https://www.youtube.com/watch?v=CR91i9f5n8U"
+									className=""
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-pointer rounded bg-white  text-black text-sm"
+									>
+										<DemoIcon />
+									</motion.button>
+								</Link>
+								<Link
+									href="https://github.com/kushaldevv/terpXchange"
+									className=""
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-pointer text-white "
+									>
+										<GithubIcon />
+									</motion.button>
+								</Link>
 							</div>
 						</div>
 					</div>

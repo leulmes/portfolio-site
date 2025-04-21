@@ -91,7 +91,7 @@ const DropdownSheet = ({menu, setMenu}: activeProps) => {
 				initial="initial"
 				animate="open"
 				exit="initial"
-				className="flex flex-col gap-3 items-center justify-center overflow-hidden font-main"
+				className="flex flex-col gap-3 items-center justify-center overflow-hidden font-main mb-48 text-3xl "
 			>
 				{navItems}
 			</motion.div>

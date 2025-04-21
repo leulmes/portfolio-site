@@ -1,31 +1,31 @@
-[debug] [2025-04-21T13:38:30.330Z] ----------------------------------------------------------------------
-[debug] [2025-04-21T13:38:30.336Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting
-[debug] [2025-04-21T13:38:30.336Z] CLI Version:   14.1.0
-[debug] [2025-04-21T13:38:30.336Z] Platform:      darwin
-[debug] [2025-04-21T13:38:30.336Z] Node Version:  v23.7.0
-[debug] [2025-04-21T13:38:30.337Z] Time:          Mon Apr 21 2025 09:38:30 GMT-0400 (Eastern Daylight Time)
-[debug] [2025-04-21T13:38:30.337Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T22:57:38.157Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T22:57:38.161Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting
+[debug] [2025-04-21T22:57:38.161Z] CLI Version:   14.1.0
+[debug] [2025-04-21T22:57:38.161Z] Platform:      darwin
+[debug] [2025-04-21T22:57:38.161Z] Node Version:  v23.7.0
+[debug] [2025-04-21T22:57:38.162Z] Time:          Mon Apr 21 2025 18:57:38 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-04-21T22:57:38.162Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-04-21T13:38:30.425Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-04-21T13:38:30.425Z] > authorizing via signed-in user (leulmesfin152025@gmail.com)
-[debug] [2025-04-21T13:38:30.425Z] [iam] checking project leulmesfin-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2025-04-21T13:38:30.425Z] Checked if tokens are valid: false, expires at: 1745195511957
-[debug] [2025-04-21T13:38:30.426Z] Checked if tokens are valid: false, expires at: 1745195511957
-[debug] [2025-04-21T13:38:30.426Z] > refreshing access token with scopes: []
-[debug] [2025-04-21T13:38:30.426Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2025-04-21T13:38:30.426Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-04-21T13:38:30.599Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2025-04-21T13:38:30.599Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions [none]
-[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions x-goog-quota-user=projects/leulmesfin-site
-[debug] [2025-04-21T13:38:30.619Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2025-04-21T13:38:30.773Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions 200
-[debug] [2025-04-21T13:38:30.773Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2025-04-21T13:38:30.775Z] Checked if tokens are valid: true, expires at: 1745246309599
-[debug] [2025-04-21T13:38:30.775Z] Checked if tokens are valid: true, expires at: 1745246309599
-[debug] [2025-04-21T13:38:30.775Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site [none]
-[debug] [2025-04-21T13:38:31.081Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site 200
-[debug] [2025-04-21T13:38:31.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site {"projectId":"leulmesfin-site","projectNumber":"1004783729908","displayName":"leulmesfin-site","name":"projects/leulmesfin-site","resources":{"hostingSite":"leulmesfin-site"},"state":"ACTIVE","etag":"1_1cabd2c4-1aa9-445c-9762-ff3627efc6e2"}
+[debug] [2025-04-21T22:57:38.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T22:57:38.250Z] > authorizing via signed-in user (leulmesfin152025@gmail.com)
+[debug] [2025-04-21T22:57:38.250Z] [iam] checking project leulmesfin-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T22:57:38.250Z] Checked if tokens are valid: false, expires at: 1745274133200
+[debug] [2025-04-21T22:57:38.250Z] Checked if tokens are valid: false, expires at: 1745274133200
+[debug] [2025-04-21T22:57:38.251Z] > refreshing access token with scopes: []
+[debug] [2025-04-21T22:57:38.251Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-21T22:57:38.251Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T22:57:38.440Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-21T22:57:38.440Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-21T22:57:38.455Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions [none]
+[debug] [2025-04-21T22:57:38.455Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions x-goog-quota-user=projects/leulmesfin-site
+[debug] [2025-04-21T22:57:38.455Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T22:57:38.614Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions 200
+[debug] [2025-04-21T22:57:38.614Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T22:57:38.614Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:38.614Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:38.614Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site [none]
+[debug] [2025-04-21T22:57:39.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site 200
+[debug] [2025-04-21T22:57:39.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site {"projectId":"leulmesfin-site","projectNumber":"1004783729908","displayName":"leulmesfin-site","name":"projects/leulmesfin-site","resources":{"hostingSite":"leulmesfin-site"},"state":"ACTIVE","etag":"1_1cabd2c4-1aa9-445c-9762-ff3627efc6e2"}
 [info] 
    Thank you for trying our early preview of Next.js support on Firebase Hosting.
    During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
@@ -37,11 +37,11 @@
 
    We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
 
-[debug] [2025-04-21T13:38:33.107Z] Checked if tokens are valid: true, expires at: 1745246309599
-[debug] [2025-04-21T13:38:33.107Z] Checked if tokens are valid: true, expires at: 1745246309599
-[debug] [2025-04-21T13:38:33.107Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site [none]
-[debug] [2025-04-21T13:38:33.687Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site 200
-[debug] [2025-04-21T13:38:33.688Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site {"name":"projects/leulmesfin-site/sites/leulmesfin-site","defaultUrl":"https://leulmesfin-site.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-04-21T22:57:40.954Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:40.954Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:40.954Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site [none]
+[debug] [2025-04-21T22:57:41.594Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site 200
+[debug] [2025-04-21T22:57:41.594Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site {"name":"projects/leulmesfin-site/sites/leulmesfin-site","defaultUrl":"https://leulmesfin-site.web.app","type":"DEFAULT_SITE"}
 [info]    ▲ Next.js 15.2.4
 
 [info]    - Environments: .env.local
@@ -53,82 +53,204 @@
 
 [info]    Linting and checking validity of types ...
 
-[info] 
-Failed to compile.
+[info]    Collecting page data ...
 
-./app/page.tsx
-10:8  Error: 'ProjectCard' is defined but never used.  @typescript-eslint/no-unused-vars
-192:57  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[info]    Generating static pages (0/5) ...
 
-info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+[info]    Generating static pages (1/5) 
 
-[debug] [2025-04-21T13:38:41.734Z] Error: ENOENT: no such file or directory, open '/Users/lulu/Desktop/leulmes-site/.next/export-marker.json'
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2025-04-21T16:47:09.721Z] ----------------------------------------------------------------------
-[debug] [2025-04-21T16:47:09.726Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting
-[debug] [2025-04-21T16:47:09.727Z] CLI Version:   14.1.0
-[debug] [2025-04-21T16:47:09.727Z] Platform:      darwin
-[debug] [2025-04-21T16:47:09.727Z] Node Version:  v23.7.0
-[debug] [2025-04-21T16:47:09.727Z] Time:          Mon Apr 21 2025 12:47:09 GMT-0400 (Eastern Daylight Time)
-[debug] [2025-04-21T16:47:09.727Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2025-04-21T16:47:09.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-04-21T16:47:09.815Z] > authorizing via signed-in user (leulmesfin152025@gmail.com)
-[debug] [2025-04-21T16:47:09.815Z] [iam] checking project leulmesfin-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2025-04-21T16:47:09.815Z] Checked if tokens are valid: false, expires at: 1745246309599
-[debug] [2025-04-21T16:47:09.815Z] Checked if tokens are valid: false, expires at: 1745246309599
-[debug] [2025-04-21T16:47:09.816Z] > refreshing access token with scopes: []
-[debug] [2025-04-21T16:47:09.816Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2025-04-21T16:47:09.816Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-04-21T16:47:09.990Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2025-04-21T16:47:09.991Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions [none]
-[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions x-goog-quota-user=projects/leulmesfin-site
-[debug] [2025-04-21T16:47:10.008Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2025-04-21T16:47:10.182Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions 200
-[debug] [2025-04-21T16:47:10.182Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/leulmesfin-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2025-04-21T16:47:10.183Z] Checked if tokens are valid: true, expires at: 1745257628991
-[debug] [2025-04-21T16:47:10.183Z] Checked if tokens are valid: true, expires at: 1745257628991
-[debug] [2025-04-21T16:47:10.184Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site [none]
-[debug] [2025-04-21T16:47:10.734Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site 200
-[debug] [2025-04-21T16:47:10.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/leulmesfin-site {"projectId":"leulmesfin-site","projectNumber":"1004783729908","displayName":"leulmesfin-site","name":"projects/leulmesfin-site","resources":{"hostingSite":"leulmesfin-site"},"state":"ACTIVE","etag":"1_1cabd2c4-1aa9-445c-9762-ff3627efc6e2"}
-[info] 
-   Thank you for trying our early preview of Next.js support on Firebase Hosting.
-   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
-   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+[info]    Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
 
-   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
-   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
-   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+[info]    Finalizing page optimization ...
 
-   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
-
-[debug] [2025-04-21T16:47:12.582Z] Checked if tokens are valid: true, expires at: 1745257628991
-[debug] [2025-04-21T16:47:12.582Z] Checked if tokens are valid: true, expires at: 1745257628991
-[debug] [2025-04-21T16:47:12.582Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site [none]
-[debug] [2025-04-21T16:47:13.331Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site 200
-[debug] [2025-04-21T16:47:13.331Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/leulmesfin-site/sites/leulmesfin-site {"name":"projects/leulmesfin-site/sites/leulmesfin-site","defaultUrl":"https://leulmesfin-site.web.app","type":"DEFAULT_SITE"}
-[info]    ▲ Next.js 15.2.4
-
-[info]    - Environments: .env.local
-
-
-[info]    Creating an optimized production build ...
-
-[info]  ✓ Compiled successfully
-
-[info]    Linting and checking validity of types ...
+[info]    Collecting build traces ...
 
 [info] 
-Failed to compile.
 
-./app/page.tsx
-10:8  Error: 'ProjectCard' is defined but never used.  @typescript-eslint/no-unused-vars
-198:11  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[info] Route (app)                                 Size  First Load JS
+┌ ○ /                                    52.6 kB         153 kB
+└ ○ /_not-found                            978 B         102 kB
++ First Load JS shared by all             101 kB
+  ├ chunks/4bd1b696-16d61eec428fe094.js  53.2 kB
+  ├ chunks/684-c0b26dbc85cf007a.js       45.4 kB
+  └ other shared chunks (total)          1.91 kB
 
-info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
 
-[debug] [2025-04-21T16:47:18.845Z] Error: ENOENT: no such file or directory, open '/Users/lulu/Desktop/leulmes-site/.next/export-marker.json'
-[error] 
-[error] Error: An unexpected error has occurred.
+
+[info] ○  (Static)  prerendered as static content
+
+
+[debug] [2025-04-21T22:57:50.943Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-east1"
+      },
+      "site": "leulmesfin-site",
+      "rewrites": [],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "/_not-found",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "4294967294"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/leulmesfin-site/hosting",
+      "webFramework": "next"
+    }
+  ]
+}
+[info] 
+[info] === Deploying to 'leulmesfin-site'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-04-21T22:57:50.946Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:50.946Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:50.947Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions [none]
+[debug] [2025-04-21T22:57:50.947Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next"}}
+[debug] [2025-04-21T22:57:52.220Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions 200
+[debug] [2025-04-21T22:57:52.220Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions {"name":"projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next"}}
+[info] i  hosting[leulmesfin-site]: beginning deploy... 
+[info] i  hosting[leulmesfin-site]: found 34 files in .firebase/leulmesfin-site/hosting 
+[debug] [2025-04-21T22:57:52.230Z] [hosting] uploading with 200 concurrency
+[debug] [2025-04-21T22:57:52.261Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.262Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.263Z] [hosting] hash cache [LmZpcmViYXNlL2xldWxtZXNmaW4tc2l0ZS9ob3N0aW5n] stored for 34 files
+[debug] [2025-04-21T22:57:52.263Z] [hosting][hash queue][FINAL] {"max":26,"min":10,"avg":14.676470588235293,"active":0,"complete":34,"success":34,"errored":0,"retried":0,"total":34,"elapsed":31}
+[debug] [2025-04-21T22:57:52.263Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c:populateFiles [none]
+[debug] [2025-04-21T22:57:52.263Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c:populateFiles {"files":{"/vercel.svg":"9a61e768442ba3450026d0d69421315044931cbffaf8f6019f856ea82dd91e4e","/next.svg":"33c5c6ad1d08bb69d8026289530e377b4d6e2a96f24562e209fd1e1e9ccee64a","/globe.svg":"ffe166407c928caa4d1640e2786d3385468043b3b9e6ea2282d4a3e370b3bc23","/file.svg":"154a8c2948836a88c695a789045bc44cc74c3d8958d5785a531d26324bc42cb1","/index.html":"91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846","/404.html":"b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257","/_next/static/lqQJOQV6XZIoeqm9QxUV1/_buildManifest.js":"90d2b2148c1068bd8506ba79e35fab183778b9e6ab7f45e18684ea52b55482c5","/_next/static/media/e529e2aeb51db5d1-s.woff2":"a3df43fcfd24eb092c4c6753cf16ad6ae1c703a53bbf75e4acb50565dd2e87c6","/_next/static/lqQJOQV6XZIoeqm9QxUV1/_ssgManifest.js":"02dbc1aeab6ef0a6ff2ff9a1643158cf9bb38929945eaa343a3627dee9ba6778","/_next/static/media/8e9b04890d24f874-s.woff2":"9fa797fbb135a340f309833c09e357778b337ec67e1ddd9aceec07444fb0c626","/_next/static/chunks/webpack-9712a3018cd6081c.js":"375d7d95a71002969fe0b4c9174d3a75c43254de6399c9faeca729070bbf23f8","/_next/static/css/8fc9dc7ce2061aa5.css":"ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762","/favicon.ico":"04614fc32690cb60b39e472119b7f7aa91d88eaeb8511a7489f8cbe1552e6e59","/_next/static/chunks/main-app-a8d391451cd54dc2.js":"716504e8357c8b3f0c17cac8b96a353681a7452bbdaa4f7fa3049990e8d7970b","/_next/static/chunks/pages/_error-cc3f077a18ea1793.js":"5d8c66a57ebffe7f13593b9295d6bbaacec19b0bc0c2b063a4d442c3b96b8f8e","/_next/static/chunks/app/layout-7dc668a4ad47a562.js":"49934b3f98fdfd52b1c4010db70ea0a8b3b15769d5767c8733b07bf4247a36f5","/_next/static/chunks/app/_not-found/page-edef0fcd75f21114.js":"c22a4f238ed1044efb55203498362d16b097d8fc2315c6b071798490c34e1ee5","/_next/static/chunks/app/page-bef273c37cc89dfa.js":"5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b","/_next/static/chunks/pages/_app-da15c11dea942c36.js":"0cc691b3564f0d92076502fb7d4516e9de5df3742d4da971369ff3adb31ba4b5","/_next/static/media/ee6c08fec32e762d-s.p.woff2":"e38b70e7942c7707428debb24212c5b29516d8b2864e4efbc5e5bcd653a8a21d","/_next/static/media/3266057196872a90-s.woff2":"c5e7252e26c555075081b56163cc69502bfdcd27d35f1dab5a71e1f570201bbd","/musicTransfer.jpg":"833044a877553f9ed18d425b6e4565eeb6cd832e0026f044012ec0eb2f4cd863","/panda.png":"5adf8a4da818e616e5388a6adbff2c0598a9ba785897dfed24761ae5bc3cc4e5","/_next/static/chunks/polyfills-42372ed130431b0a.js":"bea630d9824beca22855271c757404b58bb7b410c52a5e7d58d69ff26d9ddd0b","/_next/static/chunks/main-db0e8fa5ad50d0ca.js":"e73e6e1fd30cf80564d08fec600c747bca127633bf058fa97bf83d9587ab8aeb","/_next/static/chunks/684-c0b26dbc85cf007a.js":"dd62e53f7b13fd378746fd87dc8e0ebd1ca1a2437c37db284f2e9196a8a4c16d","/terpExchange.jpg":"312f445a51904a27e06779838375446daeeaaacb941fff7cd73d335979393552","/_next/static/chunks/702-f1f8fa8747108554.js":"79f12e96240714245c20e5326569bbe40721a11f9c7f5e1a03c74d69df56fc61","/_next/static/chunks/framework-f593a28cde54158e.js":"9913ef12521273c7c861ddf4df49fd0acca73876d0172a4e1f8b0699f1e65cc1","/_next/static/chunks/4bd1b696-16d61eec428fe094.js":"e0c6ef8ec13d4652b5d04a7378377cad998c2bc0ad33bdbd84ed8f1af58934e6","/resume.pdf":"b0f5cc16bc29b40b9d47441cc57f71830307454074556b3678dfc8c30443a5f3","/white.jpeg":"a5d5bfeeac57dfab54ad0ee68030eab0558af23d54858dff33273eb948d75f41","/ghibli.jpeg":"4a30d04eba3a413d3a8b61425995fffaa1c73578465e39a3317fd0888f686464","/gainz.png":"bae57bf90467ecc3fe0c27bc708bc7ac1c7c5c76548f3d03efefe6701a57d0b2"}}
+[debug] [2025-04-21T22:57:52.838Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c:populateFiles 200
+[debug] [2025-04-21T22:57:52.838Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c:populateFiles {"uploadRequiredHashes":["5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b","91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846","b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257","ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files"}
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.839Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:52.840Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b [none]
+[debug] [2025-04-21T22:57:52.840Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b [stream]
+[debug] [2025-04-21T22:57:52.841Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846 [none]
+[debug] [2025-04-21T22:57:52.841Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846 [stream]
+[debug] [2025-04-21T22:57:52.843Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257 [none]
+[debug] [2025-04-21T22:57:52.843Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257 [stream]
+[debug] [2025-04-21T22:57:52.846Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762 [none]
+[debug] [2025-04-21T22:57:52.847Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762 [stream]
+[debug] [2025-04-21T22:57:52.848Z] [hosting][populate queue][FINAL] {"max":579,"min":579,"avg":579,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":587}
+[debug] [2025-04-21T22:57:52.848Z] [hosting] uploads queued: 4
+[debug] [2025-04-21T22:57:53.674Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b 200
+[debug] [2025-04-21T22:57:53.674Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/5b2da9be4066394c5d88198a603ab9ebd813b6debd26d9a51cc7b385e996112b [stream]
+[debug] [2025-04-21T22:57:53.675Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762 200
+[debug] [2025-04-21T22:57:53.675Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/ccb3bc7d4dabdebbe2a5ef8d02cac6445210951397e429abddf21be441c85762 [stream]
+[debug] [2025-04-21T22:57:53.717Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846 200
+[debug] [2025-04-21T22:57:53.717Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/91ce34244560346171254a310f37334bc95359e076adcefd61886ffad6c53846 [stream]
+[debug] [2025-04-21T22:57:54.006Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257 200
+[debug] [2025-04-21T22:57:54.006Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/leulmesfin-site/versions/0dd295a40fad770c/files/b28027d699bffa288d956a795962b6cf1a4bc24fab3c3e35557b6cbb82d99257 [stream]
+[debug] [2025-04-21T22:57:54.006Z] [hosting][upload queue][FINAL] {"max":1167,"min":836,"avg":929.25,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":1168}
+[info] ✔  hosting[leulmesfin-site]: file upload complete 
+[debug] [2025-04-21T22:57:54.007Z] [hosting] deploy completed after 1784ms
+[debug] [2025-04-21T22:57:54.008Z] [
+  {
+    "config": {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-east1"
+      },
+      "site": "leulmesfin-site",
+      "rewrites": [],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "/_not-found",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "4294967294"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/leulmesfin-site/hosting",
+      "webFramework": "next"
+    },
+    "version": "projects/1004783729908/sites/leulmesfin-site/versions/0dd295a40fad770c"
+  }
+]
+[info] i  hosting[leulmesfin-site]: finalizing version... 
+[debug] [2025-04-21T22:57:54.011Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:54.011Z] Checked if tokens are valid: true, expires at: 1745279857440
+[debug] [2025-04-21T22:57:54.011Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions/0dd295a40fad770c updateMask=status%2Cconfig
+[debug] [2025-04-21T22:57:54.011Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/leulmesfin-site/versions/0dd295a40fad770c {"status":"FINALIZED","config":{"rewrites":[],"redirects":[],"headers":[{"glob":"/favicon.ico","headers":{"cache-control":"public, max-age=0, must-revalidate","content-type":"image/x-icon","x-next-cache-tags":"_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"}},{"glob":"/_not-found","headers":{"x-nextjs-stale-time":"4294967294","x-nextjs-prerender":"1","x-next-cache-tags":"_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"}}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"}}
