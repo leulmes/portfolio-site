@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kumbh_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const kumbh_sans_init = Kumbh_Sans({
 	subsets: ["latin"],
@@ -9,22 +10,28 @@ const kumbh_sans_init = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "leuldev.com",
-  description: "Designed & Developed by Leul Mesfin ;)",
+	title: "leuldev.com",
+	description: "Designed & Developed by Leul Mesfin ;)",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${kumbh_sans_init.variable} antialiased bg-[#181818]`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`${kumbh_sans_init.variable} antialiased bg-[#181818]`}>
+				{children}
+				<Toaster
+					toastOptions={{
+						style: {
+							background: "#d4edda",
+							color: "#155724", // text
+						},
+					}}
+				/>
+			</body>
+		</html>
+	);
 }

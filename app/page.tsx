@@ -65,7 +65,7 @@ export default function Home() {
 							just coding my ideas into reality...
 						</h3>
 
-						<div className="flex items-center gap-5 mt-3">
+						<div className="flex items-center gap-5 mt-1">
 							<Link
 								href="/resume.pdf"
 								target="_blank"
@@ -100,7 +100,7 @@ export default function Home() {
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
-								className="cursor-pointer bg-white text-[#181818] rounded border mt-5"
+								className="cursor-pointer bg-white text-[#181818] rounded border mt-1"
 							>
 								<ArrowDown />
 							</motion.button>
@@ -137,13 +137,13 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/musicTransfer.jpg"
 								width={409}
 								height={350}
 								alt="mt"
-								className="rounded-2xl m-auto"
+								className="rounded-2xl"
 							></Image>
 							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
 								<Link
@@ -196,13 +196,13 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/gainz.png"
 								width={409}
 								height={350}
 								alt="mt"
-								className="rounded-2xl m-auto"
+								className="rounded-2xl"
 							></Image>
 							<div className="flex items-center my-3 space-x-5 ml-3 mr-3 justify-end">
 								<Link
@@ -239,7 +239,7 @@ export default function Home() {
 							<h1 className="text-white font-main font-bold text-4xl pt-14">
 								Terp Exchange
 							</h1>
-							<div className="flex gap-1 text-sm font-medium text-white ">
+							<div className="flex gap-1 text-sm font-medium text-white">
 								<span className="">Swift,</span>
 								<span className="">Google Firebase</span>
 							</div>
@@ -251,13 +251,13 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="relative aspect-video w-full max-w-[36rem] mt-2">
+						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/terpExchange.jpg"
 								width={409}
 								height={350}
 								alt="te"
-								className="rounded-2xl m-auto"
+								className="rounded-2xl "
 							></Image>
 							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
 								<Link
