@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LoadingSpinner from "./LoadingSpinner";
-import { Toaster, toast } from "sonner";
-import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const ContactPage = () => {
 	const [submitState, setSubmitState] = useState<boolean>(false);
@@ -34,8 +33,8 @@ const ContactPage = () => {
 			});
 			if (resp.ok) {
 				console.log("Email sent!", resp);
-		 		setSubmitState(pv => !pv);
-		 		toast.success('Message sent!')
+				setSubmitState((pv) => !pv);
+				toast.success("Message sent!");
 			} else {
 				console.log("Message failed to send", resp);
 			}
@@ -43,18 +42,6 @@ const ContactPage = () => {
 		} catch (error) {
 			return error;
 		}
-
-		// emailjs
-		// 	.send(serviceId, templateId, templateParams, publicKey)
-		// 	.then((response) => {
-		// 		console.log("Email sent!", response);
-		// 		setSubmitState(pv => !pv);
-		// 		toast.success('Message sent!')
-
-		// 	})
-		// 	.catch((error) => {
-		// 		console.log("Error sending email: ", error);
-		// 	});
 	};
 
 	return (
