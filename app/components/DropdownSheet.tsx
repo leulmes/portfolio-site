@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import { motion } from "motion/react";
 import { activeProps, activeProps2 } from "../types";
