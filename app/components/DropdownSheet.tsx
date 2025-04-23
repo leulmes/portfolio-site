@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "motion/react";
 import { activeProps, activeProps2 } from "../types";
+import ScrollIntoView from "react-scroll-into-view";
 
 interface NavLink {
 	idx: number;
@@ -64,16 +65,26 @@ const containerVars = {
 const MobileNavLink = ({ title, href, menu, setMenu }: activeProps2) => {
 	return (
 		<motion.div variants={navLinkVars}>
-			<Link href={href} onClick={() => setMenu(!menu)}>{title}</Link>
+			<ScrollIntoView selector={href} onClick={() => setMenu(!menu)}>
+				{title}
+			</ScrollIntoView>
+			{/* <Link href={href} onClick={() => setMenu(!menu)}>
+				{title}
+			</Link> */}
 		</motion.div>
 	);
 };
 
-const DropdownSheet = ({menu, setMenu}: activeProps) => {
+const DropdownSheet = ({ menu, setMenu }: activeProps) => {
 	const navItems = navLinks.map((link) => {
 		return (
 			<div className="overflow-hidden" key={link.idx}>
-				<MobileNavLink title={link.title} href={link.href} menu={menu} setMenu={setMenu}/>
+				<MobileNavLink
+					title={link.title}
+					href={link.href}
+					menu={menu}
+					setMenu={setMenu}
+				/>
 			</div>
 		);
 	});

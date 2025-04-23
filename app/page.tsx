@@ -14,6 +14,7 @@ import {
 	LinkedinIcon,
 	DownloadIcon,
 } from "./components/SvgIcons";
+import ScrollIntoView from "react-scroll-into-view";
 
 export default function Home() {
 	const [menu, setMenu] = useState(false);
@@ -32,7 +33,7 @@ export default function Home() {
 	}, [menu]);
 
 	return (
-		<div className="scroll-smooth">
+		<div className="scroll-smooth ">
 			<Navbar menu={menu} setMenu={setMenu} />
 			<div className="">
 				<AnimatePresence>
@@ -100,7 +101,7 @@ export default function Home() {
 							</Link>
 						</div>
 
-						<Link href="#second-section" scroll={true}>
+						<ScrollIntoView selector="#second-section">
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
@@ -108,10 +109,10 @@ export default function Home() {
 							>
 								<ArrowDown />
 							</motion.button>
-						</Link>
+						</ScrollIntoView>
 					</div>
 					<div id="second-section" className="flex flex-col items-center">
-						<h1 className="text-white font-main font-bold text-5xl mb-10 pt-20">
+						<h1 className="text-white font-main font-bold text-5xl mb-10 mt-20">
 							Experience
 						</h1>
 						<ExperienceCard
@@ -123,7 +124,7 @@ export default function Home() {
 						/>
 					</div>
 					<div id="third-section" className="flex flex-col">
-						<div className="max-w-[36rem] ml-3 mr-3">
+						<div className="max-w-[36rem] ml-3 mr-3 mt-5">
 							<h1 className="text-white font-main font-bold text-4xl pt-14">
 								Music Transfer
 							</h1>
@@ -295,11 +296,11 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div id="fourth-section" className="flex flex-col items-center">
-						<h1 className="text-white font-main font-bold text-4xl pt-14">
+					<div id="fourth-section" className="flex flex-col items-center mb-28 mt-40">
+						<h1 className="text-white font-main font-bold text-5xl">
 							Contact
 						</h1>
-						<h2 className="text-white font-main mt-3 mb-5">
+						<h2 className="text-white font-main text-lg  mt-3 mb-5">
 							Say hi — I don’t bite (unless you’re cake 🍰).
 						</h2>
 						<ContactPage />
