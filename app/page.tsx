@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import DropdownSheet from "./components/DropdownSheet";
 import { motion, AnimatePresence } from "motion/react";
@@ -19,9 +19,12 @@ import Footer from "./components/Footer";
 
 export default function Home() {
 	const [menu, setMenu] = useState(false);
+	const ref = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
-		
+		if (ref.current) {
+			ref.current.scrollIntoView({ behavior: "smooth" });
+		}
 	}, []);
 
 	// if menu is toggled
@@ -38,7 +41,7 @@ export default function Home() {
 	}, [menu]);
 
 	return (
-		<div className="scroll-smooth">
+		<div ref={ref} className="scroll-smooth">
 			<Navbar menu={menu} setMenu={setMenu} />
 			<div className="">
 				<AnimatePresence>
@@ -302,10 +305,8 @@ export default function Home() {
 						</div>
 					</div>
 					<div id="fourth-section" className="flex flex-col items-center mb-28">
-						<h1 className="text-white font-main font-bold text-5xl">
-							Contact
-						</h1>
-						<h2 className="text-white font-main text-base font-bold mt-3 mb-5">
+						<h1 className="text-white font-main font-bold text-5xl">Contact</h1>
+						<h2 className="text-white font-main text-base font-bold mt-3 mb-3">
 							Say hi — I don’t bite (unless you’re cake 🍰).
 						</h2>
 						<ContactPage />

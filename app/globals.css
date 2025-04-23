@@ -2,6 +2,7 @@
 
 @theme inline {
     --font-main: var(--font-kumbh);
+    --font-pixelify: var(--font-pixelify);
 }
 
 @layer base {
