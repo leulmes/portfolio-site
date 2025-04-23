@@ -5,7 +5,7 @@ Here is my personal portfolio page. This is where I will showcase my projects an
 React, TypeScript, NextJS, TailwindCSS, Motion, EmailJS
 ##
 
-Big thanks to kushaldevv and ryanabeysinghe for the inspiration!<br>
+Big thanks to kushaldevv and ryanabeysinghe for the inspiration & feedback!<br>
 
 kushaldevv site: https://kdev.app<br>
 ryanabeysinghe site: https://ryanabeysinghe.com
