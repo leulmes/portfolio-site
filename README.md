@@ -3,6 +3,7 @@ Here is my personal portfolio page. This is where I will showcase my projects an
 
 ## Tech Stack 👾
 React, TypeScript, NextJS, TailwindCSS, Motion, EmailJS
+##
 
 Big thanks to kushaldevv and ryanabeysinghe for the inspiration!<br>
 
