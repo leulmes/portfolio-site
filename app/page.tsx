@@ -20,6 +20,10 @@ import Footer from "./components/Footer";
 export default function Home() {
 	const [menu, setMenu] = useState(false);
 
+	useEffect(() => {
+		
+	}, []);
+
 	// if menu is toggled
 	useEffect(() => {
 		if (menu) {
@@ -106,7 +110,7 @@ export default function Home() {
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
-								className="cursor-pointer bg-white text-[#181818] rounded border mt-1"
+								className="cursor-pointer bg-white text-[#181818] rounded border mt-6 animate-bounce"
 							>
 								<ArrowDown />
 							</motion.button>
@@ -297,7 +301,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div id="fourth-section" className="flex flex-col items-center mb-28 mt-32">
+					<div id="fourth-section" className="flex flex-col items-center mb-28">
 						<h1 className="text-white font-main font-bold text-5xl">
 							Contact
 						</h1>
