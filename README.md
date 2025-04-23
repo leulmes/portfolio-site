@@ -1,4 +1,4 @@
-## Personal Portfolio Site
+## Personal Portfolio Site 💻 💫
 Here is my personal portfolio page. This is where I will showcase my projects and possibly add a markdown blog(future goal). 
 
 ## Tech Stack 👾
