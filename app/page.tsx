@@ -37,7 +37,7 @@ export default function Home() {
 			<div className="">
 				<AnimatePresence>
 					{menu && (
-						<div className="fixed z-10 w-full h-screen">
+						<div className="fixed z-10 w-full min-h-screen">
 							<DropdownSheet menu={menu} setMenu={setMenu} />
 						</div>
 					)}
@@ -48,13 +48,17 @@ export default function Home() {
 						id="first-section"
 						className="flex flex-col items-center justify-center text-white mb-36"
 					>
-						<Image
-							src="ghibli.jpeg"
-							width={250}
-							height={200}
-							alt="Picture of the author"
-							className="rounded-full mb-4 mt-6"
-						/>
+						<div className="relative flex items-center justify-center mb-4 mt-6">
+							<div className="absolute w-[250px] h-[250px] rounded-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gray-300 via-gray-400 to-gray-600 opacity-70 animate-pulse"></div>
+							<Image
+								src="ghibli.jpeg"
+								width={250}
+								height={250}
+								alt="Picture of the author"
+								className="rounded-full relative z-10"
+								priority
+							/>
+						</div>
 						<h1 className="text-3xl text-center font-main font-bold">
 							Selam (ሰላም), I&apos;m Leul 👋🏾
 						</h1>
