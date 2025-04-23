@@ -32,30 +32,30 @@ export default function Home() {
 	}, [menu]);
 
 	return (
-		<div className="">
+		<div className="scroll-smooth">
 			<Navbar menu={menu} setMenu={setMenu} />
 			<div className="">
 				<AnimatePresence>
 					{menu && (
-						<div className="fixed z-10 w-full min-h-screen">
+						<div className="fixed z-10 w-full h-screen">
 							<DropdownSheet menu={menu} setMenu={setMenu} />
 						</div>
 					)}
 				</AnimatePresence>
 
-				<div className="scroll-smooth">
+				<div className="">
 					<div
 						id="first-section"
 						className="flex flex-col items-center justify-center text-white mb-36"
 					>
-						<div className="relative flex items-center justify-center mb-4 mt-6">
+						<div className="flex items-center justify-center mb-4 mt-6">
 							<div className="absolute w-[250px] h-[250px] rounded-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gray-300 via-gray-400 to-gray-600 opacity-70 animate-pulse"></div>
 							<Image
 								src="ghibli.jpeg"
 								width={250}
 								height={250}
 								alt="Picture of the author"
-								className="rounded-full relative z-10"
+								className="rounded-full"
 								priority
 							/>
 						</div>
@@ -100,7 +100,7 @@ export default function Home() {
 							</Link>
 						</div>
 
-						<Link href="#second-section">
+						<Link href="#second-section" scroll={true}>
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95, rotate: "0deg" }}
@@ -249,9 +249,9 @@ export default function Home() {
 							</div>
 							<div className="mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
 								<p className="text-white font-main">
-									Co-engineered a mobile marketplace for UMD students. Built with
-									Swift, and leveraged Google Firebase to establish a robust
-									UMD-affiliated auth system.
+									Co-engineered a mobile marketplace for UMD students. Built
+									with Swift, and leveraged Google Firebase to establish a
+									robust UMD-affiliated auth system.
 								</p>
 							</div>
 						</div>
