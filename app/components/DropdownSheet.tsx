@@ -95,14 +95,14 @@ const DropdownSheet = ({ menu, setMenu }: activeProps) => {
 			initial="initial"
 			animate="animate"
 			exit="exit"
-			className="flex bg-white w-full h-full items-center justify-center origin-top"
+			className="flex w-full h-full items-center justify-center origin-top bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter"
 		>
 			<motion.div
 				variants={containerVars}
 				initial="initial"
 				animate="open"
 				exit="initial"
-				className="flex flex-col gap-3 items-center justify-center overflow-hidden font-main mb-48 text-3xl "
+				className="flex flex-col gap-3 items-center justify-center overflow-hidden font-main mb-48 text-3xl text-white"
 			>
 				{navItems}
 			</motion.div>

@@ -15,6 +15,7 @@ import {
 	DownloadIcon,
 } from "./components/SvgIcons";
 import ScrollIntoView from "react-scroll-into-view";
+import Footer from "./components/Footer";
 
 export default function Home() {
 	const [menu, setMenu] = useState(false);
@@ -33,7 +34,7 @@ export default function Home() {
 	}, [menu]);
 
 	return (
-		<div className="scroll-smooth ">
+		<div className="scroll-smooth">
 			<Navbar menu={menu} setMenu={setMenu} />
 			<div className="">
 				<AnimatePresence>
@@ -49,7 +50,7 @@ export default function Home() {
 						id="first-section"
 						className="flex flex-col items-center justify-center text-white mb-36"
 					>
-						<div className="flex items-center justify-center mb-4 mt-6">
+						<div className="flex items-center justify-center mb-4 mt-24">
 							<div className="absolute w-[250px] h-[250px] rounded-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gray-300 via-gray-400 to-gray-600 opacity-70 animate-pulse"></div>
 							<Image
 								src="ghibli.jpeg"
@@ -300,11 +301,12 @@ export default function Home() {
 						<h1 className="text-white font-main font-bold text-5xl">
 							Contact
 						</h1>
-						<h2 className="text-white font-main text-lg  mt-3 mb-5">
+						<h2 className="text-white font-main text-base font-bold mt-3 mb-5">
 							Say hi — I don’t bite (unless you’re cake 🍰).
 						</h2>
 						<ContactPage />
 					</div>
+					<Footer />
 				</div>
 			</div>
 		</div>
