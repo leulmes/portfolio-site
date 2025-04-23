@@ -50,7 +50,7 @@ export default function Home() {
 						id="first-section"
 						className="flex flex-col items-center justify-center text-white mb-36"
 					>
-						<div className="flex items-center justify-center mb-4 mt-24">
+						<div className="flex items-center justify-center mb-4 mt-20">
 							<div className="absolute w-[250px] h-[250px] rounded-full bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-gray-300 via-gray-400 to-gray-600 opacity-70 animate-pulse"></div>
 							<Image
 								src="ghibli.jpeg"
@@ -297,7 +297,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div id="fourth-section" className="flex flex-col items-center mb-28 mt-40">
+					<div id="fourth-section" className="flex flex-col items-center mb-28 mt-32">
 						<h1 className="text-white font-main font-bold text-5xl">
 							Contact
 						</h1>
