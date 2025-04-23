@@ -3,3 +3,9 @@
 @theme inline {
     --font-main: var(--font-kumbh);
 }
+
+@layer base {
+    html {
+      @apply scroll-smooth;
+    }
+  }
