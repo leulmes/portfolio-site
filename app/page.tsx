@@ -151,8 +151,7 @@ export default function Home() {
 							<div className="mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
 								<p className="text-white font-main">
 									Developed a fully responsive, visually engaging website for
-									The Iron Skillet Steakhouse. Contributed to increased
-									reservation rates and enhanced online visibility.
+									The Iron Skillet Steakhouse. [Concept site]
 								</p>
 							</div>
 						</div>
