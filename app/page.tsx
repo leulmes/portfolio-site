@@ -68,8 +68,10 @@ export default function Home() {
 								priority
 							/>
 						</div>
-						<h1 className="text-3xl text-center font-main font-bold">
-							Selam (ሰላም), I&apos;m Leul 👋🏾
+						<h1 className="flex text-3xl text-center font-main font-bold gap-1">
+							<span>Selam (ሰላም),</span>
+							<span>I&apos;m Leul</span>
+							<span className="animate-wave">👋🏾</span>
 						</h1>
 						<h2 className="text-xl text-center font-main ">
 							Software Dev. & Coding Instructor
