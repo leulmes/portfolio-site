@@ -1,5 +1,5 @@
 ## Personal Portfolio Site 💻 💫
-Here is my personal portfolio page. This is where I will showcase my projects and possibly add a markdown blog(future goal). 
+Here is my personal portfolio page. This is where I will showcase my projects. 
 
 ## Tech Stack 👾
 React, TypeScript, NextJS, TailwindCSS, Motion, EmailJS<br>
