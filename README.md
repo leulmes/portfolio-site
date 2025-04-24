@@ -2,7 +2,9 @@
 Here is my personal portfolio page. This is where I will showcase my projects and possibly add a markdown blog(future goal). 
 
 ## Tech Stack 👾
-React, TypeScript, NextJS, TailwindCSS, Motion, EmailJS
+React, TypeScript, NextJS, TailwindCSS, Motion, EmailJS<br>
+Deployed on Vercel<br>
+Domain name from Hostinger
 ##
 
 Big thanks to kushaldevv and ryanabeysinghe for the inspiration & feedback!<br>
