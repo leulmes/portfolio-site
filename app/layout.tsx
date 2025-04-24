@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Kumbh_Sans, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-
+// hey
 const kumbh_sans_init = Kumbh_Sans({
 	subsets: ["latin"],
 	weight: ["400", "700"],
