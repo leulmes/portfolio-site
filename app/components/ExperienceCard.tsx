@@ -16,7 +16,7 @@ const ExperienceCard = ({
 	location,
 }: ExperienceInfo) => {
 	return (
-		<div className="flex justify-center items-center border rounded-3xl border-white w-[95%] h-40">
+		<div className="flex justify-center items-center border rounded-3xl border-white w-[95%] md:w-[50%] h-40 md:gap-5">
 			<Image
 				src={imageHref}
 				width={150}
@@ -25,13 +25,20 @@ const ExperienceCard = ({
 				className=""
 			></Image>
 			<div className="text-white font-main">
-				<Link href={"https://pandaprogrammer.com/"} rel="noopener noreferrer" target="_blank" className="cursor-pointer hover:underline">
-					<h1 className="text-xl">{company}</h1>
+				<Link
+					href={"https://pandaprogrammer.com/"}
+					rel="noopener noreferrer"
+					target="_blank"
+					className="cursor-pointer hover:underline"
+				>
+					<h1 className="text-xl font-bold">{company}</h1>
 				</Link>
 
-				<h2 className="text-base">{role}</h2>
-				<h3 className="text-md">{timeframe}</h3>
-				<h3 className="text-sm">{location}</h3>
+				<div className="flex flex-col">
+					<span className="text-base">{role}</span>
+					<span className="text-md">{timeframe}</span>
+					<span className="text-sm">{location}</span>
+				</div>
 			</div>
 		</div>
 	);

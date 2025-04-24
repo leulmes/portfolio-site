@@ -22,6 +22,7 @@ export default function Home() {
 	const ref = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
+		// review this
 		if (ref.current) {
 			ref.current.scrollIntoView({ behavior: "smooth" });
 		}
@@ -52,7 +53,7 @@ export default function Home() {
 					)}
 				</AnimatePresence>
 
-				<div className="">
+				<div className="md:flex md:flex-col md:justify-center md:items-center">
 					<div
 						id="first-section"
 						className="flex flex-col items-center justify-center text-white mb-36"
@@ -121,7 +122,10 @@ export default function Home() {
 							</motion.button>
 						</ScrollIntoView>
 					</div>
-					<div id="second-section" className="flex flex-col items-center">
+					<div
+						id="second-section"
+						className="flex flex-col items-center md:justify-center md:w-1/2"
+					>
 						<h1 className="text-white font-main font-bold text-5xl mb-10 mt-20">
 							Experience
 						</h1>
@@ -134,14 +138,110 @@ export default function Home() {
 						/>
 					</div>
 					<div id="third-section" className="flex flex-col">
-						<div className="max-w-[36rem] ml-3 mr-3 mt-5">
+						<div className="max-w-[36rem] ml-3 mr-3 mt-5 ">
+							<h1 className="text-white font-main font-bold text-4xl pt-14">
+								The Iron Skillet
+							</h1>
+							<div className="flex gap-1 text-sm font-medium text-white">
+								<span className="">React,</span>
+								<span className="">TypeScript,</span>
+								<span className="">Tailwind CSS,</span>
+								<span className="">Loveable</span>
+							</div>
+							<div className="mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+								<p className="text-white font-main">
+									Developed a fully responsive, visually engaging website for
+									The Iron Skillet Steakhouse. Contributed to increased
+									reservation rates and enhanced online visibility.
+								</p>
+							</div>
+						</div>
+						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
+							<Image
+								src="/ironSkillet.jpeg"
+								width={600}
+								height={350}
+								alt="mt"
+								className="rounded-2xl"
+							></Image>
+							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
+								<Link
+									href="https://prime-steak.vercel.app"
+									className=""
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-pointer rounded bg-white text-black text-sm"
+									>
+										<DemoIcon />
+									</motion.button>
+								</Link>
+								<div>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95, rotate: "0deg" }}
+										className="cursor-not-allowed text-white "
+									>
+										<GithubIcon />
+									</motion.button>
+								</div>
+							</div>
+						</div>
+						<div className=" max-w-[36rem] text-right ml-3 mr-3">
+							<h1 className="text-white font-main font-bold text-4xl pt-14">
+								Hiwot Studio
+							</h1>
+							<div className="flex gap-1  text-sm font-medium text-white justify-end">
+								<span>React,</span>
+								<span>TypeScript,</span>
+								<span>Tailwind CSS,</span>
+								<span>EmailJS</span>
+							</div>
+							<div className=" mt-5 items-center rounded-lg bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+								<p className="text-white font-main">
+									Designed and developed a fully responsive, SEO-optimized
+									website for a boutique salon in Bethesda, MD, resulting in a
+									40% increase in online bookings and a significant boost in web
+									traffic within the first three months of launch.
+								</p>
+							</div>
+						</div>
+						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
+							<Image
+								src="/salon.jpeg"
+								width={600}
+								height={350}
+								alt="mt"
+								className="rounded-2xl"
+							></Image>
+							<div className="flex items-center my-3 space-x-5 ml-3 mr-3">
+								<motion.button
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95, rotate: "0deg" }}
+									className="cursor-not-allowed rounded bg-white  text-black text-sm"
+								>
+									<DemoIcon />
+								</motion.button>
+								<motion.button
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95, rotate: "0deg" }}
+									className="cursor-not-allowed text-white "
+								>
+									<GithubIcon />
+								</motion.button>
+							</div>
+						</div>
+						<div className="max-w-[36rem] ml-3 mr-3 mt-5 ">
 							<h1 className="text-white font-main font-bold text-4xl pt-14">
 								Music Transfer
 							</h1>
 							<div className="flex gap-1 text-sm font-medium text-white">
-								<span className="">React, </span>
+								<span className="">React,</span>
 								<span className="">TypeScript,</span>
-								<span className="">Java, </span>
+								<span className="">Java,</span>
 								<span className="">Spring Boot,</span>
 								<span className="">Tailwind CSS</span>
 							</div>
@@ -155,7 +255,7 @@ export default function Home() {
 						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/musicTransfer.jpg"
-								width={409}
+								width={600}
 								height={350}
 								alt="mt"
 								className="rounded-2xl"
@@ -214,7 +314,7 @@ export default function Home() {
 						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/gainz.png"
-								width={409}
+								width={600}
 								height={350}
 								alt="mt"
 								className="rounded-2xl"
@@ -269,7 +369,7 @@ export default function Home() {
 						<div className="max-w-[36rem] mt-2 mr-3 ml-3">
 							<Image
 								src="/terpExchange.jpg"
-								width={409}
+								width={600}
 								height={350}
 								alt="te"
 								className="rounded-2xl "

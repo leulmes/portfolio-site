@@ -77,7 +77,7 @@ const MobileNavLink = ({ title, href, menu, setMenu }: activeProps2) => {
 const DropdownSheet = ({ menu, setMenu }: activeProps) => {
 	const navItems = navLinks.map((link) => {
 		return (
-			<div className="overflow-hidden" key={link.idx}>
+			<div className="overflow-hidden cursor-pointer" key={link.idx}>
 				<MobileNavLink
 					title={link.title}
 					href={link.href}

@@ -45,7 +45,7 @@ const ContactPage = () => {
 	};
 
 	return (
-		<div className="flex flex-col justify-center items-center rounded-2xl w-[90%] h-[450px] gap-4 font-main bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
+		<div className="flex flex-col justify-center items-center rounded-2xl w-[90%] md:w-full h-[450px] gap-4 font-main bg-gradient-to-br from-[#36333950] from-0% via-[#6EBFF422] via-75% to-[#4690D401] to-100% p-5 backdrop-blur-md backdrop-filter">
 			<form
 				onSubmit={handleSubmit}
 				className="mt-4 flex flex-col items-center justify-center"
